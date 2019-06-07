@@ -1,0 +1,22 @@
+<script src = "https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id='app' >
+        <input type="text" v-on:input='alterarTitulos' >
+        <p>{{ titulo }}</p>
+</div>    
+
+
+<script>
+        new Vue({
+                el: '#app',
+                data: {
+                     titulo: 'Aula IFPI'   
+                },
+                methods: {
+                       alterarTitulos(event){
+                               this.titulo = event.target.value
+
+                       }         
+                },
+        })
+
+</script>
